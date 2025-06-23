@@ -22,7 +22,7 @@
     "module-publish/beta": "npm publish --tag beta",
     ">> сборка": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
     "build": "node-gyp build --release",
-    "prebuild": "prebuild --prerelease -r electron -t 32.3.0 --strip -u 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"
+    "prebuild": "prebuild --prerelease -r electron -t 32.3.0 --strip"
   },
   "devDependencies": {
     "electron": "32.3.0",
