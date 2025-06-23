@@ -1,5 +1,5 @@
 {
-  "name": "electron-window-focus",
+  "name": "mobile-electron",
   "version": "1.0.1",
   "description": "Активирует окно и возвращает фокус приложению",
   "main": "index.js",
