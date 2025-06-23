@@ -11,6 +11,9 @@
     "type":  "git",
     "url":  "https://github.com/roman-kripton/mobile-electron.git"
   },
+  "prebuild": {
+    "url": "https://github.com/roman-kripton/mobile-electron/releases/download/v{version}/{binary_name}.tar.gz"
+  },
   "scripts": {
     "install": "prebuild-install -r electron -t 32.3.0",
     "reinstall": "rmdir /s /q node_modules & del package-lock.json & npm i",
@@ -19,7 +22,7 @@
     "module-publish/beta": "npm publish --tag beta",
     ">> сборка": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
     "build": "node-gyp build --release",
-    "prebuild": "prebuild -r electron -t 32.3.0 --strip -u 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"
+    "prebuild": "prebuild --prerelease -r electron -t 32.3.0 --strip -u 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"
   },
   "devDependencies": {
     "electron": "32.3.0",
