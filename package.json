@@ -12,7 +12,7 @@
     "url":  "https://github.com/roman-kripton/mobile-electron.git"
   },
   "scripts": {
-    "install": "prebuild-install",
+    "install": "prebuild-install -r electron -t 32.3.0",
     "reinstall": "rmdir /s /q node_modules & del package-lock.json & npm i",
     ">> публикация": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
     "module-publish/release": "npm publish",
