@@ -15,7 +15,7 @@
     "url": "https://github.com/roman-kripton/mobile-electron/releases/download/v{version}/{binary_name}.tar.gz"
   },
   "scripts": {
-    "install": "prebuild-install -r electron -t 32.3.0",
+    "install": "prebuild-install -r electron -t 32.3.0 --verbose",
     "reinstall": "rmdir /s /q node_modules & del package-lock.json & npm i",
     ">> публикация": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
     "module-publish/release": "npm publish",
